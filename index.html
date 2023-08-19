@@ -12,8 +12,7 @@
             .then(response => response.json())
             .then(data => {
                 const conteudoDiv = document.getElementById('conteudo');
-                // Faça o que você precisa com os dados JSON aqui
-                // Por exemplo, preencher a div com os dados
+                
                 conteudoDiv.innerHTML = JSON.stringify(data);
             })
             .catch(error => console.error('Erro:', error));
